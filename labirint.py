@@ -95,8 +95,8 @@ while m[end[0]][end[1]] == 0:
     draw_matrix(a, m)
 
 # Вывод обработанной матрицы
-for i in m:
-    print(i)
+# for i in m:
+#     print(i)
 
 # Ищем кратчайший путь
 i, j = end
@@ -127,6 +127,7 @@ for i in range(10):
     else:
         draw_matrix(a, m)
 
+print('Шаги кратчайшего пути:')
 print(the_path)
 
 images[0].save('maze.gif', save_all=True, append_images=images[1:], optimize=False, duration=1, loop=0)
